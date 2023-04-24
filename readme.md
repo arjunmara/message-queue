@@ -18,7 +18,9 @@ To clone the repo, run the following command in your terminal:
 \`\`\` docker run -p 8080:8080 -p 8081:8081 -d username/appname \`\`\`
 
 The message queue is now up and running on port 8080. You can access the API
-using a REST client or by sending requests directly to the endpoint.
+using a REST client or by sending requests directly to the endpoint. As this
+queue uses redis for publishing and subscribing, make sure the redis server is
+up and running.
 
 ## Contributing
 
